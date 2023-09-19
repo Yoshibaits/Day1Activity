@@ -9,6 +9,7 @@
 body{
     overflow: hidden;
     overflow-y: scroll;
+    background-color: rgb(30, 30, 30);
 }
 
 
@@ -77,3 +78,33 @@ p{
 }
 
 /* Body */
+
+.body{
+    width: 100vw;
+    max-width: 65rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.MenuTitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.perbody{
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bodyImg{
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+}
