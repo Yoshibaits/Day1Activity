@@ -9,7 +9,7 @@
 body{
     overflow: hidden;
     overflow-y: scroll;
-    background-color: rgb(30, 30, 30);
+    /* background-color: rgb(30, 30, 30); */
 }
 
 
@@ -104,7 +104,11 @@ p{
     flex-wrap: wrap;
 }
 .bodyImg{
-    object-fit: cover;
-    height: 20rem;
-    margin: 0.5rem;
+    object-fit:contain;
+    height: 200px;
+    width: 250px;
+    margin: 1rem;
+}
+.bodyPara, .MenuTitle{
+    color: black;
 }
