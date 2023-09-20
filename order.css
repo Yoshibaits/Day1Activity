@@ -43,19 +43,26 @@ header{
     box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
     z-index: 100;
 }
-.nav{
+.navbar{
     display : flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-    
-
 }
 .logo{
-    font-size: 1.1rem;
-    color: var(--text-color);
-    font-weight: 400;
+    object-fit: cover;
+    height: 3.5rem;
+    width: 4rem;
+    border-radius: 50%;
 
+}
+
+.choice{
+    color: var(--text-color);
+    padding: 0 2rem;
+}
+.choice:hover{
+    color: yellow;
 }
 
 /* CART DESIGN CHUCHU */
@@ -67,7 +74,7 @@ header{
 .cart{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     width: 360px;
     min-height: 100vh;
     padding: 20px;
@@ -197,7 +204,6 @@ header{
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
-
 }
 
 .price{
@@ -216,4 +222,11 @@ header{
 
 .add-cart:hover{
     background: hsl(249, 32%, 17%);
+}
+
+@media screen and (max-width: 1000px){
+    .shop-content{
+        margin: 0 .75rem;
+    }
+
 }

@@ -37,7 +37,9 @@ function ready() {
         var button = addCart[i];
         button.addEventListener('click', addCartClicked);
     }
+
 }
+
 
 
 
@@ -70,19 +72,19 @@ function addCartClicked(event){
 function addProductToCart(title, price, pizzaImg){
     var cartShopBox = document.createElement('div');
     cartShopBox.classList.add('cart-box');
-    var cartItems = document.getElementByClassName('cart-content')[0];
+    var cartItems = document.getElementsByClassName('cart-content')[0];
     var cartItemsNames = cartItems.getElementsByClassName('cart-product-title');
     for (var i = 0; i < cartItemsNames.length; i++) {
         if(cartItemsNames[i].innerText == title){
-            alert('You have already added this pizza');
+            alert('You have already added this pizza to cart');
             return;
         }
     }
     var cartBoxContent = `                            
-    <img src="./assets/Spinach.jpg" alt="" class="cart-img">
+    <img src="${pizzaImg}" alt="" class="cart-img">
     <div class="detail-box">
-        <div class="cart-product-title">Spinach</div>
-        <div class="cart-price">6.99</div>
+        <div class="cart-product-title">${title}</div>
+        <div class="cart-price">${price}</div>
         <input type="number" value="1" class="cart-quantity">
     </div>
     <i class='bx bx-trash cart-remove' ></i>
@@ -92,7 +94,6 @@ function addProductToCart(title, price, pizzaImg){
     cartItems.append(cartShopBox);
     cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click', removeCartItem);
     cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged);
-
 }
 
 
