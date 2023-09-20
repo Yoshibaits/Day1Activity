@@ -62,9 +62,9 @@ function quantityChanged(event) {
 function addCartClicked(event){
     var button = event.target; 
     var shopProducts = button.parentElement;
-    var title = shopProducts.getElementsByClassName('product-title')[0].innerText;
+    var title = shopProducts.getElementsByClassName('pizza-title')[0].innerText;
     var price = shopProducts.getElementsByClassName('price')[0].innerText;
-    var pizzaImg = shopProducts.getElementsByClassName('product-img')[0].src;
+    var pizzaImg = shopProducts.getElementsByClassName('pizza-img')[0].src;
     addProductToCart(title, price, pizzaImg);
     updatetotal();
 }

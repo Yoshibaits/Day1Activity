@@ -112,7 +112,7 @@ header{
 }
 
 .cart-product-title{
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 .cart-price{
@@ -186,20 +186,20 @@ header{
     gap: 1.5rem;
     
 }
-.product-box{
+.pizza-box{
     position: relative;
 }
-.product-box:hover{
+.pizza-box:hover{
     padding: 10px;
     border: 1px solid var(--text-color);
     transition: 0.4s;
 }
-.product-img{
+.pizza-img{
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
 }
-.product-title{
+.pizza-title{
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
